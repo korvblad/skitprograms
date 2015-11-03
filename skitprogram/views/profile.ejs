@@ -1,0 +1,44 @@
+﻿<!doctype html>
+<html>
+<head>
+  <% include ./Shared/head %>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <style>
+        body        { padding-top:80px; word-wrap:break-word; }
+    </style>
+      
+</head>
+  <header style="margin top:0px;padding-top:0px;">
+    <% include ./Shared/header %></header>
+  <body style="padding:0;">
+
+<div class="container">
+  
+    <div class="page-header text-center">
+ 
+    </div>
+
+    <div class="row">
+
+        <!-- LOCAL INFORMATION -->
+        <div class="col-sm-6">
+            <div class="well">
+                <h3><span class="fa fa-user"></span> Profil</h3>
+
+                    <p>
+                       
+                        <strong>Email</strong>: <%= user.local.email %><br>
+                          <!--Namn och ålder skulle kunna läggas till men tidsbrist-->
+                          <strong>Namn</strong>: <%= user.local.name %><br>
+                            <strong>Ålder</strong>: <%= user.local.age %><br>
+                    </p>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>
